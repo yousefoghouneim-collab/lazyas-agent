@@ -1,0 +1,16 @@
+{
+  "name": "lazyas",
+  "description": "Lazy as: fix what you pointed at, with proof before anything counts as done.",
+  "owner": {
+    "name": "Lazy as",
+    "url": "https://lazyas.com"
+  },
+  "plugins": [
+    {
+      "name": "lazyas",
+      "source": "./",
+      "description": "Point at your screen, talk, and Claude fixes it by note, with proof before anything counts as done.",
+      "category": "productivity"
+    }
+  ]
+}

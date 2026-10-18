@@ -1,0 +1,10 @@
+{
+  "name": "lazyas",
+  "version": "0.2.0",
+  "description": "Fix what you pointed at. Claude reads your Lazy as review notes (screenshots + what you said), fixes them by reference, and has to show proof before anything counts as done.",
+  "author": { "name": "Lazy as", "url": "https://lazyas.com" },
+  "homepage": "https://lazyas.com/claude-code",
+  "repository": "https://github.com/yousefoghouneim-collab/lazyas-agent",
+  "license": "MIT",
+  "keywords": ["review", "qa", "screenshots", "voice", "feedback", "verify"]
+}

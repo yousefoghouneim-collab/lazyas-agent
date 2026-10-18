@@ -1,0 +1,11 @@
+#!/bin/sh
+# Runs the bundled lazyas tool with whatever Python is around (uv fetches one if there's none).
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+export PYTHONPATH="$DIR${PYTHONPATH:+:$PYTHONPATH}"
+if command -v python3 >/dev/null 2>&1 && python3 -c 'import sys; sys.exit(sys.version_info < (3, 9))' 2>/dev/null; then
+  exec python3 -m lazyas_cli "$@"
+fi
+if command -v uv >/dev/null 2>&1; then exec uv run --no-project --python 3.12 python -m lazyas_cli "$@"; fi
+if command -v python >/dev/null 2>&1; then exec python -m lazyas_cli "$@"; fi
+echo "Lazy as needs Python 3.9+ or uv (https://docs.astral.sh/uv/)." >&2
+exit 1

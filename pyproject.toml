@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lazyas-cli"
+version = "0.2.0"
+description = "Lazy as for AI agents: review notes you recorded by pointing and talking, as an MCP server and CLI"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["mcp", "claude-code", "codex", "cursor", "review", "qa", "screenshots"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.urls]
+Homepage = "https://lazyas.com"
+
+[project.scripts]
+lazyas = "lazyas_cli.cli:main"
+
+[tool.setuptools]
+packages = ["lazyas_cli"]

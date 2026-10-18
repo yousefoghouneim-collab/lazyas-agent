@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "lazyas": {
+      "command": "sh",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/bin/lazyas", "mcp"]
+    }
+  }
+}
