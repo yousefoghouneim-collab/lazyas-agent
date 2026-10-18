@@ -28,4 +28,7 @@ claude plugin marketplace add yousefoghouneim-collab/lazyas-agent
 claude plugin install lazyas@lazyas
 ```
 
-Tests: `python3 -m unittest discover -s tests`. MIT licence.
+Tests: `python3 -m unittest discover -s tests`.
+
+MIT licence (see `LICENSE`) for the lazyas tool and the Claude Code plugin only. The Lazy as apps for Mac, Windows and
+Linux are proprietary: https://lazyas.com/eula. "Lazy as" and its logo are trademarks and aren't licensed here.
